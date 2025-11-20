@@ -315,136 +315,7 @@ main {
 
 /*********************fin video************************/
 
-/* 
-.section {
-	margin: 0 0 25 0;
-}
 
-.title {
-	width: 50%;
-	height: 60px;
-	display: flex;
-	align-items: center;
-	justify-content: center;	
-	outline: 10px dashed #ccebee;
-	;
-	outline-offset: -6px;
-	border: 6px solid #ccebee;
-	margin: 20px auto;
-}
-
-.chapitre {
-	display: flex;
-	justify-content: center;
-	flex-flow: wrap row;
-
-}
-
-.card-item {
-	width: 25%;
-	min-height: 331px;
-	background-color: #ededed;
-
-}
-.card-item ul li{
-	display: flex;
-	justify-content: flex-start;
-
-} 
-
-.title-item {
-	
-	margin-right: 2px;
-	color: #f00;
-} */
-
-/* .section3 ul li {
-	margin-bottom: 1px;
-
-} */
-
-/* .lettrine {
-	display: block;
-	position: relative;
-	text-align: center;
-	top: 3px;
-	left: 0px;
-	margin-right: 3px;
-	font-size: 42px;
-	background-color: #f00;
-	padding: 10px 5px;
-} */
-
-.display-n {
-  display: none;
-}
-
-/* .capital {
-	
-	text-transform: capitalize;
-	min-width: 2px;
-	text-overflow: ellipsis;
-	white-space: nowrap; 
-	overflow: hidden; 
-}
-.capital:hover{
-	overflow: visible;
-	z-index: 1;
-}
-
-.mb-5{
-	display: flex;
-	justify-content: center;
-	margin-bottom: 5px;
-	border-bottom: 2px solid red;
-	width: 25px;
-	
-}
-.central{
-	
-		display: flex;		
-		justify-content: center;
-		align-items: center;
-		flex-flow: wrap column;
-	
-}
-.down{
-	text-align: center;
-	margin-top: 5px;
-}
-.down i{
-	
-	font-size: x-large;
-} */
-/*table*/
-/* .demo {
-	border:2px solid #ff0000;
-	border-collapse:collapse;
-	padding:5px;
-	margin: 0 auto;
-	width: 70%;
-	min-height: 60px;
-	text-align: center;
-}
-.demo th {
-	border:1px solid #ff0000;
-	padding:5px;
-	background:#ccebee;
-	text-transform: capitalize;
-}
-.demo td {
-	border:2px solid #ff0000;
-	padding:5px;
-	
-}
-.demo tr td:first-child{
-	background-color:#ccebee;
-
-}
-.show{
-	display: block;
-} */
-/*****footer*****/
 
 footer {
   display: flex;
@@ -612,25 +483,30 @@ ul li {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.wrapper {
+  width: 600px;
+  
+}
    header{
 	flex-direction: column;
-	margin-left: 5px;
+	margin-left: 5px;	
+	max-width:500px ;
    }
    .main-nav{
 	display: flex;
 	flex-direction: column;
-	margin-left: 5px;
+	
    }
-   .logo a img{
-	margin-left: 45px;
+ .logo{
+	display: none;
    }
    .subheader, .bordel{
 	display: none;
    }
    h1{
-	margin: 35px;
+	margin:15px auto;
 	text-align: center;
-	width: 30%;
+	width: 60%;
 	font-size: 2rem;
    }
    .container-video {
@@ -638,20 +514,21 @@ ul li {
   max-width: 300px;
   
 }
-h2{
-	font-size: large;
+h2,h3{
+	font-size: medium;
 	text-align: center;
 }
 .section{
 	min-width: 450px;
 	display: flex;
 	flex-direction: column;
-	margin: 15px auto;
+	margin: 15px 65px;
 }
 .section.card{
 	display: flex;
 	flex-wrap: wrap column;
 	font-size: 1rem;
+	
 
 }
 
@@ -674,33 +551,231 @@ h2{
 	overflow: hidden;
 }
 
-.donate,footer{
-	width: 320px;
-	margin:15px 35px;
+.donate{
+	width: 420px;
+	margin:15px 65px;
 	
 }
-/* footer{
-	width: 330px;
-	margin:0 5px;
+footer{
+	
+	margin:15px 45px;
 	
 }
- */
+.scroll-up-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #4c5fec;
+  position: fixed;
+  bottom: 5rem;
+  left: 5rem;
+
+
+}
+.card{
+	min-width: 300px;
+	padding-left:55px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-	
+
+	.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+.logo{
+	display: none;
+   }
+	.subheader, .bordel{
+	display: none;
+   }
+   .scroll-up-btn{
+    left: 5rem;
+   }
+   
+   h2 , h3{
+	font-size: medium;
+   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	
+@media only screen and (min-width: 768px ) and (min-width: 992px){
+		.wrapper {
+  width: 800px;
+  margin: 0 auto;
 }
+	.subheader, .bordel{
+	display: none;
+   }
+   .scroll-up-btn{
+    left: 5rem;
+   }
+   h2 , h3{
+	font-size: large;
+   }
+}
+	
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+/*............................ Extra large devices (large laptops and desktops, 1200px and up) .................*/
+@media only screen and (min-width: 1200px) {
+	
+.wrapper {
+  width: 1300px;
+  margin: 0px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.logo{
+	display: block;
+}
+.logo a i {
+	
+  font-size: xx-large;
+  margin-left: 15px;
+}
+
+.main-nav > .item-menu {
+  float: left;
+  width: 150px;
+}
+
+.main-nav > li > a {
+  display: block;
+  font-weight: bold;
+  line-height: 50px;
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  text-shadow: 0 1px 1px #fff;
+  border-left: 1px solid #fff;
+  text-align: center;
+  border-right: 1px solid #000;
+  background: #ccebee;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.main-nav > li > .panneau {
+  background: #5a7c99;
+  width: 479px;
+  position: absolute;
+  border-radius: 0 0 20px 20px;
+  margin-left: 1px;
+  display: none;
+  padding: 0px 0px 10px;
+  text-align: center;
+}
+
+.main-nav:hover .item-menu:hover {
+  width: 480px;
+  /*afin que li est la même largeur que le panneau au survol*/
+}
+
+.main-nav:hover > .item-menu {
+  width: 90px;
+  /*largeur des autres li */
+}
+
+.main-nav > li:hover > .panneau {
+  display: block;
+}
+
+.panneau dl {
+  display: inline-block;
+  width: 25%;
+  padding: 30px;
+  margin: 20px 5px;
+  font-weight: bold;
+  line-height: 25px;
+  border: 1px solid #ededed;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.panneau dt {
+  font-size: 1.2em;
+  border-bottom: 1px dotted #ccebee;
+  color: #ccebee;
+  padding-bottom: 5px;
+}
+
+.panneau dd a {
+  display: block;
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.panneau dd a:hover {
+  color: #fff;
+  background: rgba(162, 188, 206, 0.3);
+  border-radius: 30px;
+}
+
+.panneau img {
+  max-width: 100%;
+}
+
+.panneau figcaption {
+  color: #ededed;
+  font-style: italic;
+  line-height: 20px;
+  font-size: 0.8em;
+  padding: 0px 20px 10px 20px;
+}
+.subheader{
+	display: block;
+}
+.main-menu {
+	
+  text-align: center;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu a {
+  color: #ededed;
+  display: block;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  text-shadow: 2px 2px 2px #222;
+  border-radius: 5px;
+  background: red;
+}
+
+.main-menu li:first-child a {
+  border-radius: 20px 5px 5px 40px;
+}
+
+.main-menu li:last-child a {
+  border-radius: 5px 40px 20px 5px;
+}
+
+.main-menu a:hover {
+  color: #333;
+  text-shadow: -03px -3px 2px rgb(239, 245, 238);
+  background: linear-gradient(to bottom, #ddd 0%, #aaa 50%, #ddd 100%);
+}
+
+.scroll-up-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #4c5fec;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+}
+}
