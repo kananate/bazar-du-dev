@@ -712,16 +712,7 @@ footer{
 	margin:15px 45px;
 	
 }
-.scroll-up-btn {
-  width: 4rem;
-  height: 4rem;
-  background-color: #4c5fec;
-  position: fixed;
-  bottom: 5rem;
-  left: 5rem;
 
-
-}
  .card{
 	min-width: 300px;
 	padding-left:55px;
@@ -741,9 +732,6 @@ footer{
    }display: none;
    }
 
-   .scroll-up-btn{
-    left: 5rem;
-   }
    
    h2 , h3{
 	font-size: medium;
@@ -759,9 +747,7 @@ footer{
 	.subheader, .bordel{
 	display: none;
    }
-   .scroll-up-btn{
-    left: 5rem;
-   }
+  
    h2 , h3{
 	font-size: large;
    }
@@ -916,14 +902,7 @@ header {
   background: linear-gradient(to bottom, #ddd 0%, #aaa 50%, #ddd 100%);
 }
 
-.scroll-up-btn {
-  width: 4rem;
-  height: 4rem;
-  background-color: #4c5fec;
-  position: fixed;
-  bottom: 5rem;
-  right: 5rem;
-}
+
 .video{
 	width: 50%;
 }
