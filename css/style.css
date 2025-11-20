@@ -276,6 +276,9 @@ main {
    
     
 }
+.video{
+	width: 50%;
+}
 #mute {
     color: #000;
     margin: 0 12px;
