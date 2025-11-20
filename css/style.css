@@ -712,7 +712,16 @@ footer{
 	margin:15px 45px;
 	
 }
+.scroll-up-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #4c5fec;
+  position: fixed;
+  bottom: 5rem;
+  left: 5rem;
 
+
+}
  .card{
 	min-width: 300px;
 	padding-left:55px;
@@ -726,11 +735,11 @@ footer{
   width: 600px;
   margin: 0 auto;
 }
-.logo{
+
 		.subheader, .bordel{
 	display: none;
-   }display: none;
    }
+   
 
    
    h2 , h3{
