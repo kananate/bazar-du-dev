@@ -233,6 +233,9 @@ header {
 }
 
 /********générique**************/
+h1{
+	text-decoration: underline #CDD6DB 10px;
+}
 h1,.bordel {
 	width: 100%;
 	font-family: "Cabin_Sketch", sans-serif;
@@ -744,7 +747,7 @@ footer{
   width: 800px;
   margin: 0 auto;
 }
-	.subheader, .bordel{
+	.subheader{
 	display: none;
    }
   
@@ -762,7 +765,9 @@ footer{
   width: 1300px;
   margin: 0px auto;
 }
-
+.bordel{
+	display: block;
+}
 header {
   display: flex;
   justify-content: space-between;
